@@ -112,7 +112,7 @@ main .container .storage .card .progress .bar {
     align-items: center;
 }
 
-main .container .storage .card .progress .usage-bar {
+main .container .storage .card .progress .bar .usage-bar {
     background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     width: 81.5%;
     height: 15px;
@@ -122,7 +122,7 @@ main .container .storage .card .progress .usage-bar {
     justify-content: flex-end;
 }
 
-main .container .storage .card .progress .usage-bar .bar-point {
+main .container .storage .card .progress .bar .usage-bar .bar-point {
     width: 12px;
     height: 12px;
     background-color: hsl(243, 100%, 93%);
