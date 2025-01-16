@@ -1,3 +1,141 @@
 body {
     font-family: "Raleway", serif;
+    background: url(../images/bg-desktop.png) center 100% no-repeat hsl(229, 57%, 11%);
+    color: hsl(243, 100%, 93%);
+}
+
+main {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+main .container .icons-logo,
+main .container .storage .card {
+    background-color: hsl(228, 56%, 26%);
+}
+
+main .container .icons-logo {
+    padding: 40px;
+    padding-bottom: 0;
+    padding-right: 8%;
+    border-radius: 10px;
+    border-top-right-radius: 95px;
+    max-height: 200px;
+    margin-top: 56px;
+}
+
+main .container .icons-logo .logo,
+main .container .icons-logo ul {
+    width: fit-content;
+}
+
+main .container .icons-logo ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+main .container .icons-logo ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+}
+
+main .container .storage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .container .storage .storage-left {
+    width: fit-content;
+    background-color: hsl(243, 100%, 93%);
+    padding: 15px 20px;
+    padding-right: 0;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transform: translate(150%, 35%);
+}
+
+main .container .storage .storage-left::after {
+    content: "";
+    position: relative;
+    bottom: -50px;
+    width: 0;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-top: 25px solid ;
+    transform: rotate(90deg);
+}
+
+
+main .container .storage .storage-left .numero {
+    color: #000000;
+    font-size: 40px;
+}
+
+main .container .storage .storage-left .numero+span {
+    color: hsl(229, 7%, 55%);
+    font-weight: 600;
+}
+
+main .container .storage .card {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: hsl(228, 56%, 26%);
+}
+
+main .container .storage .card p {
+    padding: 15px 0 20px;
+}
+
+main .container .storage .card .progress .bar {
+    width: 450px;
+    height: 20px;
+    background-color: hsl(229, 57%, 11%, 0.4);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+main .container .storage .card .progress .usage-bar {
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 81.5%;
+    height: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+main .container .storage .card .progress .usage-bar .bar-point {
+    width: 12px;
+    height: 12px;
+    background-color: hsl(243, 100%, 93%);
+    border-radius: 50%;
+    margin-right: 1.5px;
+}
+
+main .container .storage .card .progress .gb-numbers {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
 }
