@@ -24,9 +24,7 @@ main .container .storage .card {
 }
 
 main .container .icons-logo {
-    padding: 40px;
-    padding-bottom: 0;
-    padding-right: 8%;
+    padding: 40px 8% 0 40px;
     border-radius: 10px;
     border-top-right-radius: 95px;
     max-height: 200px;
@@ -58,14 +56,12 @@ main .container .icons-logo ul li {
 main .container .storage {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 main .container .storage .storage-left {
     width: fit-content;
     background-color: hsl(243, 100%, 93%);
-    padding: 15px 20px;
-    padding-right: 0;
+    padding: 15px 0 15px 20px;
     border-radius: 10px;
     border-bottom-right-radius: 0;
     display: flex;
@@ -82,7 +78,7 @@ main .container .storage .storage-left::after {
     width: 0;
     height: 0;
     border-right: 25px solid transparent;
-    border-top: 25px solid ;
+    border-top: 25px solid hsl(243, 100%, 93%);
     transform: rotate(90deg);
 }
 
